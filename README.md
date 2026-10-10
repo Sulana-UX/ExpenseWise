@@ -28,32 +28,47 @@
 ## 🏗️ System Architecture
 
 ```mermaid
-graph TD
-    subgraph Client ["Frontend Layer (Flutter 3.41+ / Dart)"]
-        UI["Material 3 Mobile & Web UI"]
-        Provider["State Management (Provider)"]
-        DioClient["Dio HTTP Client + Auth Interceptor"]
-        SecureStore["Secure Token Storage (Encrypted / Memory)"]
-        UI --> Provider --> DioClient
-        DioClient <--> SecureStore
+flowchart TD
+    subgraph Frontend [Frontend - Flutter Mobile & Web]
+        UI[Material 3 UI] --> Provider[State Management]
+        Provider --> DioClient[Dio HTTP Client]
+        DioClient --> SecureStore[Secure Token Storage]
     end
 
-    subgraph API ["Backend REST API (FastAPI / Python 3.12+)"]
-        CORS["CORS Middleware"]
-        AuthMiddleware["JWT Authentication & Bearer Verification"]
-        Validators["Pydantic v2 Schema Validation"]
-        Services["Financial Business Logic (Isolation Engine)"]
-        CORS --> AuthMiddleware --> Validators --> Services
+    subgraph Backend [Backend - FastAPI REST API]
+        CORS[CORS Middleware] --> Auth[JWT Authentication]
+        Auth --> Validation[Pydantic v2 Schemas]
+        Validation --> Logic[Business Logic & Security Engine]
     end
 
-    subgraph Database ["Persistence Layer"]
-        ORM["SQLAlchemy 2.0 ORM"]
-        DB[("SQLite 3 Database")]
-        Services --> ORM --> DB
+    subgraph Database [Persistence Layer]
+        ORM[SQLAlchemy 2.0 ORM] --> SQLite[(SQLite 3 Database)]
+        Logic --> ORM
     end
 
-    DioClient -- "Bearer JWT / JSON API (Port 8000)" --> CORS
+    DioClient -->|Bearer JWT / REST API| CORS
 ```
+
+---
+
+## 📸 Application Preview & Screenshots
+
+<div align="center">
+
+### 1. Financial Health Dashboard
+<img src="docs/screenshots/1.png" alt="ExpenseWise Dashboard" width="95%" />
+
+<br/><br/>
+
+### 2. Expense Analytics & Visual Cash Flow
+<img src="docs/screenshots/2.png" alt="Expense Analytics" width="95%" />
+
+<br/><br/>
+
+### 3. Transaction Management & Records
+<img src="docs/screenshots/3.png" alt="Transaction Management" width="95%" />
+
+</div>
 
 ---
 
