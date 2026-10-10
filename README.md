@@ -11,7 +11,7 @@
 ![Tests](https://img.shields.io/badge/Tests-23%20Passed-brightgreen?style=for-the-badge&logo=pytest)
 
 <p align="center">
-  <b>A Cybersecurity & Defensive Programming Showcase Personal Finance Application</b><br>
+  <b>A Production-Grade, Security-Hardened Personal Finance & Wealth Management System</b><br>
   Built with Flutter for Mobile & Web, and a hardened FastAPI REST backend with strict user data isolation.
 </p>
 
@@ -21,7 +21,7 @@
 
 ## 📌 Project Overview
 
-**ExpenseWise** is a full-stack personal finance tracking system engineered with a **defense-in-depth security model**. Designed as an educational and portfolio capstone, it demonstrates how to build production-grade financial applications resilient against common OWASP vulnerabilities like **Insecure Direct Object References (IDOR)**, **Broken Authentication**, and **Credential Stuffing**.
+**ExpenseWise** is a full-stack personal finance and expense management system engineered with a **defense-in-depth security architecture**. Built to meet modern financial application standards, it provides comprehensive budgeting, analytics, and transaction tracking while remaining resilient against common OWASP vulnerabilities like **Insecure Direct Object References (IDOR)**, **Broken Authentication**, and **Credential Stuffing**.
 
 ---
 

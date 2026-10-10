@@ -19,8 +19,8 @@ async def lifespan(app: FastAPI):
 app = FastAPI(
     title="Secure Smart Expense Tracker API",
     description=(
-        "Educational & Cybersecurity Portfolio REST API for managing personal finances. "
-        "Demonstrates Argon2 password hashing, JWT stateless authentication, IDOR mitigation, "
+        "Production-grade REST API for personal finance and wealth management. "
+        "Engineered with Argon2 password hashing, JWT stateless authentication, IDOR mitigation, "
         "and strict user data isolation."
     ),
     version="1.0.0",
