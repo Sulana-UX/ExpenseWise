@@ -192,7 +192,7 @@ flutter run
 
 **Sulana Uduwana**  
 - Email: [sulanav02@gmail.com](mailto:sulanav02@gmail.com)  
-- GitHub: [@sulana-uduwana](https://github.com) *(Update with your GitHub handle)*
+- GitHub: [@Sulana-UX](https://github.com/Sulana-UX)
 
 ---
 
